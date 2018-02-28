@@ -90,3 +90,12 @@ Execute o seguinte comando para o diagnóstico da aplicação:
 
 Se o comando retornar que está tudo certo, a aplicação foi instalada com sucesso.
  
+# Comandos de console
+
+Foram criados alguns comandos de console, para realizar algumas tarefas na aplicação. O console é invocado pelo comando `./fotocontainer`, que deve ser setado como executável para poder ser processado corretamente. Este console depende da configuração feita no arquivo `.env` para funcionar corretamente. Os comandos são os seguintes:
+
+* `cache:purge`: Limpa a cache da aplicação.
+* `tools:database_install`: Cria e migra o Banco de Dados.
+* `tools:verify`: Verifica a instalação atual, retornando possíveis erros e como resolve-los.
+* `queue_process:emails`: Processa a fila de emails a serem disparados, esperando por no mínimo 60s até a finalização do processo.
+* `queue_process:images`: Processa a fila de imagens a terem a marca d'água a ser aplicada, esperando por no mínimo 60s até a finalização do processo.
