@@ -67,7 +67,7 @@ Por último, crie o banco de dados para aplicação. O servidor MariaDB já deve
 
 `./vendor/bin/phinx migrate`
 
-## Configuração
+# Configuração
 
 A configuração da aplicação reside em um arquivo .env. Para facilitar a instalação existe um exemplo deste arquivo, chamado [.env.SAMPLE](https://github.com/luizfsnunes/photocontainer-api/blob/master/public/.env.SAMPLE). Neste exemplo estão todas as configurações disponíveis, com explicações sobre o que cada uma delas significa. Crie um arquivo .env baseado neste exemplo, o altere de acordo com as suas configurações locais e o coloque em `/public`.
 
